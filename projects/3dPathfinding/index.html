@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Pathfinding – dorianbach.dev</title>
+    <meta name="description" content="3D Pathfinding project using DirectX11 and WinAPI.">
+    <meta name="author" content="Dorian Bach">
+    <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/projects" class="active">Projects</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="project-page">
+        <section class="project-intro">
+            <h1>3D Pathfinding</h1>
+            <p class="project-meta">2023 - 2024 • <a href="https://github.com/Amsh285/DxDemo">GitHub</a></p>
+            <p>
+                This project was my first attempt at building a small game engine using DirectX11 and WinAPI.  
+                I implemented a window and input system, basic rendering of multiple geometries, navigation meshes, and A* pathfinding.  
+                The project helps with performance evaluation of A* pathfinding in 3D space and provides visualization of AI navigation.
+            </p>
+            <p>
+                The navigation meshes in this project were generated using a simple slope filter, which is a basic step in creating navigable surfaces.  
+                While more advanced techniques can produce higher-quality meshes, the simplicity of the current approach results in a higher density than would be practical for a full-scale engine.  
+                Additionally, the implementation is vertex-based, which further increases the density of the graph.  
+                A more efficient method could operate over polygon centroids and evaluate shortest paths across the resulting set of convex polygons using the funnel algorithm.  
+                Despite this, the pathfinding implementation performs exceptionally well, with execution times in the microsecond range, and offers ample room for further optimization.  
+                With improvements, this approach could be suitable for professional use.
+            </p>
+        </section>
+
+        <section class="project-video">
+            <!-- Original-Auflösung einfügen -->
+            <video controls autoplay loop width="1280" height="720">
+                <source src="./3DPathfindingBenchmarkTool.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+    </main>
+</body>
+</html>

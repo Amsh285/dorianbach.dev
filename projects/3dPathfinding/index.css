@@ -1,0 +1,134 @@
+/* Grundlayout */
+body {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9fb;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* Header & Navigation */
+header {
+    background-color: #222;
+    padding: 0.75rem 1rem;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1rem;
+}
+
+nav a {
+    color: #eee;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+nav a:hover,
+nav a.active {
+    color: #00aaff;
+}
+
+/* Hauptbereich */
+main {
+    max-width: 900px;
+    margin: 4rem auto;
+    padding: 0 1rem;
+}
+
+/* Sidebar / Aside */
+aside {
+    margin-bottom: 2rem;
+}
+
+aside h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+/* Article / Project Cards */
+article {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    margin-bottom: 2rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+article:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+article a {
+    color: #00aaff;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+article a:hover {
+    text-decoration: underline;
+}
+
+article p {
+    margin: 0.5rem 0;
+}
+
+/* Meta Info */
+.project-meta {
+    font-size: 0.8rem;
+    color: #555;
+    margin: 0.25rem 0;
+}
+
+.project-meta a {
+    color: #00aaff;
+    text-decoration: none;
+}
+
+.project-meta a:hover {
+    text-decoration: underline;
+}
+
+/* Video-Styling */
+.project-video {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.project-video video {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Projekt-Intro */
+.project-intro h1 {
+    font-size: 2rem;
+    margin-bottom: 0.25rem;
+}
+
+.project-intro p {
+    margin: 0.5rem 0;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    main {
+        margin: 2rem 1rem;
+    }
+
+    .project-video video {
+        max-width: 100%;
+    }
+}
